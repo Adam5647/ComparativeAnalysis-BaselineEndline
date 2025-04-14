@@ -197,7 +197,7 @@ You are given performance data comparing baseline and endline assessments. Provi
 
         try:
             response = requests.post(
-                "http://localhost:11434/api/generate",
+                "https://33aa-2405-201-ac0b-e0cb-f813-6255-431f-b370.ngrok-free.app/api/generate",
                 json={"model": "mistral", "prompt": base_prompt, "stream": False},
                 headers={"Content-Type": "application/json"}
             )
@@ -237,7 +237,7 @@ Using the following table, provide:
 
         try:
             advanced_response = requests.post(
-                "http://localhost:11434/api/generate",
+                "https://33aa-2405-201-ac0b-e0cb-f813-6255-431f-b370.ngrok-free.app/api/generate",
                 json={"model": "mistral", "prompt": base_advanced, "stream": False},
                 headers={"Content-Type": "application/json"}
             )
